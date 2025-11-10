@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body > div  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #container {
+      width: 748px;
+      height: 748px;
+      display: grid;
+      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 132px 155px 20px;
+      background-color: #000;
+    }
+
+    .red-cell {
+      background-color: #E72F24;
+    }
+    .white-cell {
+      background-color: #F0F1EC;
+    }
+    .blue-cell {
+      background-color: #004592;
+    }
+    .yellow-cell {
+      background-color: #F9D01E;
+    }
+    .dark-grey-cell {
+      background-color: #232629;
+    }
+    #b {
+      grid-column: span 3;
+    }
+    #c {
+      grid-row: span 2;
+    }
+    #d {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    #e {
+      border-bottom: 10px solid #000;
+    }
+    #g {
+      grid-row: span 2;
+    }
+  </style>
+</head>
+
+<body>
+<h1>Mondrian Project</h1>
+<div>
+  <div id="container">
+    <div id="a" class="red-cell"></div>
+    <div id="b" class="white-cell"></div>
+    <div id="c" class="white-cell"></div>
+    <div id="d" class="white-cell"></div>
+    <div id="e" class="blue-cell"></div>
+    <div id="g" class="white-cell"></div>
+    <div id="h" class="white-cell"></div>
+    <div id="i" class="yellow-cell"></div>
+    <div id="j" class="dark-grey-cell"></div>
+  </div>
+</div>
+</body>
+
+</html>
