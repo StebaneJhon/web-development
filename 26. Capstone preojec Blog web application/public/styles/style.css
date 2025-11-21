@@ -1,0 +1,36 @@
+
+.post-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.side-bar {
+    background-color: grey;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 85%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}

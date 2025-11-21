@@ -1,0 +1,19 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="root">
+    <div class="side-bar">
+        <%- include("./partials/sidebar.ejs") %>
+    </div>
+    <div class="content">
+        <form class="post-details" action="/submit" method="POST">
+            <input type="text" name="author" placeholder="Author">
+            <input type="text" name="title" placeholder="Title">
+            <input type="text" name="post" placeholder="Text">
+            <input type="text" name="refferences" placeholder="Refferences">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+
+<%- include("./partials/footer.ejs") %>

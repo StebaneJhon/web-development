@@ -1,0 +1,20 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="root">
+    <div class="side-bar">
+        <%- include("./partials/sidebar.ejs") %>
+    </div>
+    <div class="content">
+        <% if(locals.post) { %>
+            <h1><%= post.title %></h1>
+            <h4><%= post.author %></h4>
+            <p><%= post.post %></p>
+            <p><%= post.refferences %></p>
+        <% } else { %>
+            <p> 404: Post not found.</p>
+        <% } %>
+    </div>
+</div>
+
+
+<%- include("./partials/footer.ejs") %>
