@@ -1,0 +1,4 @@
+username: "stb"
+password: "stbTheKing"
+apiKey: "ea8e786c-a6ba-491c-be06-032e452b61da"
+token: "3ca3c0e7-7e84-4909-a249-a02ec2955b8e"
