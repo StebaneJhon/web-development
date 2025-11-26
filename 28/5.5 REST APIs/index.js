@@ -49,7 +49,6 @@ app.post("/put-secret", async (req, res) => {
 
 app.post("/patch-secret", async (req, res) => {
   const searchId = req.body.id;
-
   try {
     const result = await axios.patch(API_URL + `/secrets/${searchId}`, req.body, config);
     res.render("index.ejs", { content: JSON.stringify(result.data) })  
